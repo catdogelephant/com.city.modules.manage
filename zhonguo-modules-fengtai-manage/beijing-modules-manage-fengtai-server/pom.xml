@@ -4,15 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.beijing.modules.manage</groupId>
-        <artifactId>zhonguo-modules-manage</artifactId>
+        <artifactId>beijing-modules-manage-fengtai</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.beijing.modules.manage</groupId>
-    <artifactId>beijing-modules-manage-fengtai</artifactId>
+    <groupId>com.beijing.modules.manage.fengtai</groupId>
+    <artifactId>beijing-modules-manage-fengtai-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>beijing-modules-manage-fengtai</name>
+    <name>beijing-modules-manage-fengtai-server</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>1.8</java.version>

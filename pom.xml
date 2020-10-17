@@ -8,18 +8,27 @@
         <version>2.3.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.zhonguo.modules.beijing.manage</groupId>
-    <artifactId>zhonguo-modules-beijing-manage</artifactId>
+    <groupId>com.beijing.modules.manage</groupId>
+    <artifactId>zhonguo-modules-manage</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>zhonguo-modules-beijing-manage</name>
+    <name>beijing-modules-manage</name>
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
+
+    <modules>
+        <module>zhonguo-modules-fengtai-manage</module>
+    </modules>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -30,16 +39,17 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
+       <!-- <dependency>
+            <groupId>com.goldnurse.tools</groupId>
+            <artifactId>goldnurse-tools-safety</artifactId>
+            <version>1.0.6-RELEASE</version>
+        </dependency>-->
+
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>com.city.modules.tools.safety</groupId>
+            <artifactId>city-modules-tools-safety</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
