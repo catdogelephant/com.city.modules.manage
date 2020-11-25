@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beijing.modules.manage.account.mapper.AccountMapper">
+
+    <select id="testMapVo" resultType="java.util.Map" parameterType="java.lang.Long">
+        SELECT
+        <if test="levelVoList != null and levelVoList.size > 0">
+            <foreach collection="levelVoList" item="levelInfo" separator=",">
+                COUNT( CASE WHEN `exp` BETWEEN #{levelInfo.startExp} AND #{levelInfo.topExp} THEN 1 END ) AS #{levelInfo.level}
+            </foreach>
+        </if>
+        FROM
+            account
+    </select>
+</mapper>
+
+<!--
+        COUNT(CASE WHEN `exp` BETWEEN 0 AND 1 THEN 1 END) AS levelOne,
+        COUNT(CASE WHEN `exp` BETWEEN 1.1 AND 2 THEN 1 END) AS levelTwo,
+        COUNT(CASE WHEN `exp` BETWEEN 2.2 AND 3 THEN 1 END) AS levelThree-->

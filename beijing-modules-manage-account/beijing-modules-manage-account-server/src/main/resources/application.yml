@@ -8,3 +8,8 @@ server:
 spring:
   profiles:
     active: local
+
+mybatis-plus:
+  mapper-locations: classpath:beijing/*.xml
+  config-location:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印sql
