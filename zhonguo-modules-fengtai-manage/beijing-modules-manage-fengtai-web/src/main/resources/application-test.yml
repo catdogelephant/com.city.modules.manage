@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    username: root
+    password: InsuranUserTest#1234
+    url: jdbc:mysql://localhost:3306/city_modules?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+#dubbo:
+#  application:
+#    name: goldnurse-modules-manage-channel-web
+#  registry:
+#    address: zookeeper://192.168.0.3:2181?backup=192.168.0.3:2182,192.168.0.3:2183
+#    protocol: zookeeper
+#    timeout: 30000
+#  version: 1.0.2

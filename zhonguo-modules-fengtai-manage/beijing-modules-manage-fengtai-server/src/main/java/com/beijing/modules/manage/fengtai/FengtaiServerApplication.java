@@ -1,4 +1,4 @@
-package com.beijing.modules.manage.fengtai.server;
+package com.beijing.modules.manage.fengtai;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

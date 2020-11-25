@@ -1,7 +1,10 @@
 server:
-  port: 8000
+  port: 8001
   servlet:
     encoding:
       charset: UTF-8
       force: true
       enabled: true
+spring:
+  profiles:
+    active: test
